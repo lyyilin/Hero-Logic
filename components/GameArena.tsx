@@ -72,7 +72,8 @@ const GameArena: React.FC<GameArenaProps> = ({ state, maxMonsterHP }) => {
 
       {/* Logs Overlay */}
       <div className="absolute bottom-2 left-6 right-6 bg-black/60 text-emerald-400 text-[10px] p-2 rounded-lg font-mono border border-emerald-500/20 backdrop-blur-sm">
-        <span className="opacity-50">PROG_LOG > </span> {state.logs[state.logs.length - 1] || "READY_TO_START"}
+        
+        <span className="opacity-50">PROG_LOG &gt; </span> {state.logs[state.logs.length - 1] || "READY_TO_START"}
       </div>
     </div>
   );
